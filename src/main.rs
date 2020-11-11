@@ -56,13 +56,13 @@ impl Arguments {
             ap.refer(&mut args.domain)
                 .add_option(&["-d", "--domain"],
                             Store,
-                            "Name of the domain to create an email alias for, e.g. facebook")
+                            "Name of the domain to create an email alias for, e.g. mozilla")
                 .required();
 
             ap.refer(&mut args.email_domain)
                 .add_option(&["-e", "--email"],
                             Store,
-                            "Name of the base email domain, e.g. gmail.com")
+                            "Name of the base email domain, e.g. spencewenski.com")
                 .required();
 
             ap.refer(&mut args.random_suffix)
